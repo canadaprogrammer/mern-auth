@@ -176,3 +176,16 @@
 
     module.exports = router;
     ```
+
+## Import Routes
+
+- On `index.js`
+
+  - ```js
+    const userRoutes = require('./routes/users');
+    const authRoutes = require('./routes/auth');
+
+    // routes
+    app.use('/api/users', userRoutes);
+    app.use('/api/auth', authRoutes);
+    ```
